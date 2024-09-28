@@ -1,6 +1,8 @@
-module crd-to-openapi
+module github.com/negz/crd-to-openapi
 
-go 1.20
+go 1.21
+
+toolchain go1.22.7
 
 require (
 	github.com/spf13/cobra v1.7.0
