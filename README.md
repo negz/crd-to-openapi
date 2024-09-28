@@ -13,6 +13,7 @@ Flags:
 
 Example:
 
-```
+```shell
+go install github.com/negz/crd-to-openapi@latest
 kubectl get crd applications.app.k8s.io -o yaml | crd-to-openapi
 ```
