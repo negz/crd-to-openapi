@@ -3,8 +3,6 @@ package main
 import (
 	"os"
 
-	"github.com/negz/crd-to-openapi/pkg"
-
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )
@@ -30,7 +28,7 @@ func NewRootCommand(flags *pflag.FlagSet) *cobra.Command {
 		Short: "CRD To OpenAPI",
 		Long:  "Read CRD from stdin and write OpenAPI spec to stdout.",
 		RunE: func(cmd *cobra.Command, args []string) error {
-			return pkg.Convert(crdVersion, openapi2)
+			return Convert(crdVersion, openapi2)
 		},
 	}
 
